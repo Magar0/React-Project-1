@@ -1,0 +1,133 @@
+  @import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Lato:ital,wght@0,300;1,400&family=Roboto:wght@300&display=swap');
+
+
+  *{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.main-div{
+    background-color: #06092e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.child-div{
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.child-div img{
+    height: 100px;
+
+}
+.child-div figcaption{
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  margin: 15px auto;
+}
+
+.add-items input{
+    font-family: 'Brygada 1918', serif;
+    min-width: 400px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 0.4rem 1.5rem;
+}
+.btn2{
+    margin-left:-40px ;
+    font-size: 25px;
+    cursor: pointer;
+    color: grey;
+}
+
+.btn2:hover{
+    color: #27e70e;
+}
+
+.btn3{
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 5px 15px;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.btn3:hover{
+    background-color: gray;
+    color: rgb(62, 0, 233);
+    font-weight: bolder;
+}
+
+.each-item{
+    /* height: 50px; */
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(85, 41, 220);
+    padding: 0.4rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+}
+
+.fa-trash{
+    margin: 1.2rem;
+}
+
+.each-item:hover{
+    background-color: white;
+    color: #06092e;
+}
+
+.each-item:hover .fa-trash{
+    color: red;
+    cursor: pointer;
+}
+.each-item:hover .fa-pen-to-square{
+    color: green;
+    cursor: pointer;
+}
+
+
+/* @media queries........... */
+
+@media (max-width:576px){
+    .child-div img{
+        height: 80px;
+    
+    }
+    .child-div figcaption{
+      font-size: 1.4rem;
+      letter-spacing: 1.2px;
+      word-spacing: 2px;
+    }
+    
+    .add-items input{
+        min-width: 250px;
+        font-size: 1rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 0.4rem 1rem;
+    }
+
+.btn2{
+    font-size: 20px;
+}
+
+.each-item{
+    min-width: 250px;
+}
+}
