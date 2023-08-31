@@ -4,7 +4,7 @@ import Menu from "./menuApi.js";
 import MenuCard from "./MenuCard";
 import Navbar from './Navbar';
 
-const uniqueList = [...new Set(Menu.map(curElem => curElem.category)),"All"];
+const uniqueList = [...new Set(Menu.map(curElem => curElem.category)), "All"];
 
 console.log(uniqueList);
 
@@ -12,11 +12,11 @@ console.log(uniqueList);
 const Restaurant = () => {
 
   const [menuData, setMenuData] = useState(Menu);
-const [menuList,setMenuList]= useState(uniqueList)
+  const [menuList, setMenuList] = useState(uniqueList)
 
   const filterItem = (category) => {
 
-    if (category==="All"){
+    if (category === "All") {
       setMenuData(Menu);
       return
     }
@@ -28,15 +28,15 @@ const [menuList,setMenuList]= useState(uniqueList)
   }
 
 
-  useEffect(()=>{
+  useEffect(() => {
     document.title = "Food App"
-  },[])
+  }, [])
 
   return (
     <>
-    <div className="main-box-restaurant">
-      <Navbar filterItem={filterItem} menuList={menuList}/>
-      <MenuCard menuDatas={menuData} />
+      <div className="main-box-restaurant">
+        <Navbar filterItem={filterItem} menuList={menuList} />
+        <MenuCard menuDatas={menuData} />
       </div>
     </>
   )

@@ -153,9 +153,9 @@
 }
 
 
-@media screen and (max-width:1300px){
-  .card-read::after{
-    width:40%;
+@media screen and (max-width:1300px) {
+  .card-read::after {
+    width: 40%;
   }
 }
 
@@ -164,8 +164,9 @@
     grid-template-columns: repeat(1, minmax(200px, 500px));
     padding: 0 2rem;
   }
-  .card-read::after{
-    width:52%;
+
+  .card-read::after {
+    width: 52%;
   }
 
 }

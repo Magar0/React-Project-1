@@ -8,18 +8,18 @@ import Navbar from './Navbar';
 
 const App = () => {
 
-  return(
+  return (
     <>
-    <Routes>
-      <Route path='/' element={<Navbar/> } >
-        <Route index element={<Restaurant/>}/>
-        <Route path='/todolist' element={<ToDo/>}/>
-        <Route path='/weather' element={<Temp/>}/>
-      </Route>
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Navbar />} >
+          <Route index element={<Restaurant />} />
+          <Route path='/todolist' element={<ToDo />} />
+          <Route path='/weather' element={<Temp />} />
+        </Route>
+      </Routes>
     </>
   )
-  
+
 };
 
 export default App;

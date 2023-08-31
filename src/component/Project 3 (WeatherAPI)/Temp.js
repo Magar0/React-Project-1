@@ -41,19 +41,19 @@ const Temp = () => {
 
   return (
     <>
-    <div className="main-box-weather">
-      <div> <h2>Thapa Weather Forecast</h2></div>
-      <div className="search">
-        <input type="search" placeholder='search...' autoFocus id='search' className='searchTerm' value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
+      <div className="main-box-weather">
+        <div> <h2>Thapa Weather Forecast</h2></div>
+        <div className="search">
+          <input type="search" placeholder='search...' autoFocus id='search' className='searchTerm' value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
 
-        <button className='searchBtn' onClick={getWeather}>Search</button>
+          <button className='searchBtn' onClick={getWeather}>Search</button>
+        </div>
+        <div className="error"><h5 id='error'></h5></div>
+
+        {/* temp card */}
+
+        < WeatherCard tempInfo={tempInfo} />
       </div>
-      <div className="error"><h5 id='error'></h5></div>
-
-      {/* temp card */}
-     
-     < WeatherCard tempInfo={tempInfo}/>
-     </div>
     </>
   )
 }

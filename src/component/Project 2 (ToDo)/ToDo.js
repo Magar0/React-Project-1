@@ -72,9 +72,9 @@ const ToDo = () => {
     localStorage.setItem("myTodoList", JSON.stringify(items))
   }, [items])
 
-    useEffect(()=>{
-      document.title = "ToDo-List"
-    },[])
+  useEffect(() => {
+    document.title = "ToDo-List"
+  }, [])
 
   return (
     <>
