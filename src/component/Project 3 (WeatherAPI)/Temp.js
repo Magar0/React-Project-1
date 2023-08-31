@@ -35,6 +35,7 @@ const Temp = () => {
   };
 
   useEffect(() => {
+    document.title = "Weather Forecasting"
     getWeather()
   }, []);
 

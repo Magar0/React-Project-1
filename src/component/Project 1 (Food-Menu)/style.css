@@ -9,6 +9,8 @@
   background-color: var(--bs-supporting-color);
   font-size: 14px;
   font-weight: 400;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 
@@ -31,7 +33,6 @@
 .navbar {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
 }
 
 .btn {

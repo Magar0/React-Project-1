@@ -72,6 +72,10 @@ const ToDo = () => {
     localStorage.setItem("myTodoList", JSON.stringify(items))
   }, [items])
 
+    useEffect(()=>{
+      document.title = "ToDo-List"
+    },[])
+
   return (
     <>
       <div className="main-div">

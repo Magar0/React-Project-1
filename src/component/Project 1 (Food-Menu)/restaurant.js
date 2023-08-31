@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.css";
 import Menu from "./menuApi.js";
 import MenuCard from "./MenuCard";
@@ -26,6 +26,11 @@ const [menuList,setMenuList]= useState(uniqueList)
     });
     setMenuData(updatedList);
   }
+
+
+  useEffect(()=>{
+    document.title = "Food App"
+  },[])
 
   return (
     <>
